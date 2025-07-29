@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header-list li a {
+  margin: 10px;
+  padding: auto;
+  background-color: #eee;
+}
+.menu {
+  overflow-x: auto;   /* scroll enable */
+  width: 100%;
+  -ms-overflow-style: none;  /* IE and Edge ke liye */
+  scrollbar-width: none;     /* Firefox ke liye */
+}
+
+.menu::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera ke liye */
+}
+
+.header-list li a {
+  display: block;
+  padding: 0px 5px;
+  color: #000000; /* White text */
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  text-decoration: none;
+  list-style: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  text-wrap: nowrap;
+}
+
+.header-list li a:hover {
+  background: #d4cece; /* Hover pe background red */
+  color: #b06b6b;
+  text-decoration: underline;
+}
+.logo-section {
+  background: #d4cece;
+}
+
+.news-head {
+  list-style: none;       /* default bullet हटाना */
+  padding-left: 0;
+}
+
+.news-head li {
+  position: relative;
+  padding-left: 20px;     /* arrow ke liye जगह */
+  margin-bottom: 8px;
+}
+
+.news-head li::before {
+  content: "\f0da";       /* Font Awesome right arrow (›) */
+  font-family: "Font Awesome 5 Free";  
+  font-weight: 900;       /* solid icon ke liye zaroori */
+  color: #f70d28;         /* लाल रंग */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
